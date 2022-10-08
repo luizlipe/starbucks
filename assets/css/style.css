@@ -236,6 +236,15 @@ header .line{
   
 }
 
+.area4--content h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+
 .area4--text{
   margin-bottom: 50px;
   line-height: 25px;
@@ -258,4 +267,86 @@ footer{
   padding: 80px;
   color: #fff;
   text-align: center;
+}
+
+
+@media (min-width: 769px) and (max-width: 1140px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .area1{
+    grid-template-columns: 3fr 2fr;
+  }
+  .area2{
+    grid-template-columns: 2fr 3fr;
+  }
+  .area3{
+    grid-template-columns: 2fr 3fr;
+  }
+} 
+
+@media (max-width: 425px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header--search input{
+    max-width: 80px;
+  }
+
+  .header--menu{
+    margin-left: 20px;
+  }
+
+  .banner h1{
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .banner--images img{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #117050;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .area1,
+  .area2,
+  .area3,
+  .area4{
+    grid-template-columns: 1fr;
+  }
+
+  .area1--content,
+  .area2--content,
+  .area3--content,
+  .area4--content{
+    padding: 40px;
+  }
+
+  .area1--content h2,
+  .area2--content h2,
+  .area3--content h2,
+  .area4--content h2{
+    font-size: 1.5625rem;
+    line-height: 30px;
+  }
+
+  .area5{
+    height: 200px;
+  }
+
+  footer{
+    font-size: .75rem;
+    padding: 40px 20px;
+  }
 }
